@@ -1,5 +1,5 @@
-# git-exercises-solutions
-##Bundle 1 #Exercise1 #exercise2
+# the-gym-git-exercises-solutions
+# Bundle 1 #Exercise1 #exercise2
 ```bash
 Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
