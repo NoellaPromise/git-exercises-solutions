@@ -1,5 +1,6 @@
-# git-exercises-solutions
-## Bundle 1  #exercise 1 and #exercise 2 
+
+# the-gym-git-exercises-solutions
+# Bundle 1 #Exercise1 #exercise2
 
 ```bash
 Windows PowerShell
@@ -237,5 +238,3 @@ Changes to be committed:
 Dropped refs/stash@{0} (53d9301f9a67bc8b492d96e4446f47d5ff8c20d5)
 PS C:\Users\UserNA1842\the-gym-git-exercises> git reset --hard
 HEAD is now at e084587 Stash poped About and home files
-PS C:\Users\UserNA1842\the-gym-git-exercises>
-```
