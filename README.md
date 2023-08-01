@@ -251,3 +251,92 @@ To https://github.com/NoellaPromise/git-exercises-solutions
    e084587..fa3044d  dev -> dev
 PS C:\Users\UserNA1842\the-gym-git-exercises>
 ```
+# Bundle2 #exercise 2
+```
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\Users\UserNA1842\the-gym-git-exercises> git pull origin main
+From https://github.com/NoellaPromise/git-exercises-solutions
+ * branch            main       -> FETCH_HEAD
+Updating d94947e..682442c
+Fast-forward
+ README.md | 255 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 253 insertions(+), 2 deletions(-)
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the service page"
+[ft/service-redesign fa89497] Add changes to the service page
+ 1 file changed, 19 insertions(+)
+ create mode 100644 services.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/service-redesign
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 568 bytes | 568.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/NoellaPromise/git-exercises-solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/NoellaPromise/git-exercises-solutions
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the services page"
+[main a5c933a] Add changes to the services page
+ 1 file changed, 19 insertions(+)
+ create mode 100644 services.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 573 bytes | 573.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NoellaPromise/git-exercises-solutions
+   682442c..a5c933a  main -> main
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git diff ft/service-redesign..main
+diff --git a/services.html b/services.html
+index 00e3939..c2d1d4d 100644
+--- a/services.html
++++ b/services.html
+@@ -10,7 +10,7 @@
+     <p>This page contains The services we provide to our clients</p>
+     <h2> Here are some of our services </h2>
+     <ul>
+-        <li>Coaching</li>
++        <li>Coaching and Teaching</li>
+
+         <li>Training</li>
+     </ul>
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git merge ft/service-redesign
+Auto-merging services.html
+CONFLICT (add/add): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Merge main with ft/service-redesign branch"
+[main 2b449a6] Merge main with ft/service-redesign branch
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 621 bytes | 621.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NoellaPromise/git-exercises-solutions
+   a5c933a..2b449a6  main -> main
+PS C:\Users\UserNA1842\the-gym-git-exercises>
+
+
+```
