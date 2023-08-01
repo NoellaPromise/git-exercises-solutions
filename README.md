@@ -238,3 +238,75 @@ Changes to be committed:
 Dropped refs/stash@{0} (53d9301f9a67bc8b492d96e4446f47d5ff8c20d5)
 PS C:\Users\UserNA1842\the-gym-git-exercises> git reset --hard
 HEAD is now at e084587 Stash poped About and home files
+
+
+#Bundle 2 Exercise1
+
+```bash
+
+PS C:\Users\UserNA1842\the-gym-git-exercises> ls
+
+
+    Directory: C:\Users\UserNA1842\the-gym-git-exercises
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        7/29/2023  10:43 AM            261 about.html
+-a----        7/29/2023  10:43 AM            260 home.html
+-a----        7/29/2023  10:54 AM          12179 README.md
+-a----         8/1/2023  11:14 AM            334 services.html
+
+
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the services page"
+[ft/bundle-2 5dfcf08] Add changes to the services page
+ 1 file changed, 1 insertion(+)
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/bundle-2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 398 bytes | 398.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/NoellaPromise/git-exercises-solutions
+   8bd7a1b..5dfcf08  ft/bundle-2 -> ft/bundle-2
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/bundle-2
+Already on 'ft/bundle-2'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), 2.17 KiB | 21.00 KiB/s, done.
+From https://github.com/NoellaPromise/git-exercises-solutions
+   5dfcf08..a8ffe3b  ft/bundle-2 -> origin/ft/bundle-2
+   d94947e..682442c  main        -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> ft/bundle-2
+
+PS C:\Users\UserNA1842\the-gym-git-exercises> git pull origin ft/bundle-2
+From https://github.com/NoellaPromise/git-exercises-solutions
+ * branch            ft/bundle-2 -> FETCH_HEAD
+Updating 5dfcf08..a8ffe3b
+Fast-forward
+ README.md | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+PS C:\Users\UserNA1842\the-gym-git-exercises>
+```
+
+
+
+
+
+
+
+
