@@ -340,3 +340,471 @@ PS C:\Users\UserNA1842\the-gym-git-exercises>
 
 
 ```
+# Bundle 3
+## Exercise 1
+```
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add team page"
+[ft/team-page 8c4f694] Add team page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 506 bytes | 506.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/NoellaPromise/git-exercises-solutions/pull/new/ft/team-page
+remote:
+To https://github.com/NoellaPromise/git-exercises-solutions
+ * [new branch]      ft/team-page -> ft/team-page
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/team-page
+Switched to branch 'ft/team-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git log
+commit 8c4f694988e711407e1dd48904e94c6c5aa0ac81 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Wed Aug 2 10:45:47 2023 +0200
+
+    Add team page
+
+commit a0ddbd72533d66b40477b41b9223555103531460 (origin/main, main, ft/contact-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:29:40 2023 +0200
+
+    Add README file
+
+commit 2b449a66bf0daf77d692c9d63bec2f444e61600b
+Merge: a5c933a fa89497
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:26:43 2023 +0200
+
+    Merge main with ft/service-redesign branch
+
+commit a5c933a92b8b7b76581faaf60c25da0005cb6ec1
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 11:53:50 2023 +0200
+
+    Add changes to the services page
+
+commit 8c4f694988e711407e1dd48904e94c6c5aa0ac81 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Wed Aug 2 10:45:47 2023 +0200
+
+    Add team page
+
+commit a0ddbd72533d66b40477b41b9223555103531460 (origin/main, main, ft/contact-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:29:40 2023 +0200
+
+    Add README file
+
+commit 2b449a66bf0daf77d692c9d63bec2f444e61600b
+Merge: a5c933a fa89497
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:26:43 2023 +0200
+
+    Merge main with ft/service-redesign branch
+
+commit a5c933a92b8b7b76581faaf60c25da0005cb6ec1
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 11:53:50 2023 +0200
+
+    Add changes to the services page
+
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+HELP -- Press RETURN for more, or q when done...skipping...
+commit 8c4f694988e711407e1dd48904e94c6c5aa0ac81 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Wed Aug 2 10:45:47 2023 +0200
+
+    Add team page
+
+commit a0ddbd72533d66b40477b41b9223555103531460 (origin/main, main, ft/contact-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:29:40 2023 +0200
+
+    Add README file
+
+commit 2b449a66bf0daf77d692c9d63bec2f444e61600b
+Merge: a5c933a fa89497
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:26:43 2023 +0200
+
+    Merge main with ft/service-redesign branch
+
+commit a5c933a92b8b7b76581faaf60c25da0005cb6ec1
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 11:53:50 2023 +0200
+
+    Add changes to the services page
+
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/team-page
+Switched to branch 'ft/team-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git cherry-pick 8c4f694988e711407e1dd48904e94c6c5aa0ac81
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+On branch ft/team-page
+You are currently cherry-picking commit 8c4f694.
+  (all conflicts fixed: run "git cherry-pick --continue")
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+nothing to commit, working tree clean
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+warning: cancelling a cherry picking in progress
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the contact page"
+[ft/contact-page 36d694e] Add changes to the contact page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 contact.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/contact-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 515 bytes | 515.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/NoellaPromise/git-exercises-solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/NoellaPromise/git-exercises-solutions
+ * [new branch]      ft/contact-page -> ft/contact-page
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add faq page"
+[ft/faq-page f0163c5] Add faq page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 faq.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 469 bytes | 469.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/NoellaPromise/git-exercises-solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/NoellaPromise/git-exercises-solutions
+ * [new branch]      ft/faq-page -> ft/faq-page
+PS C:\Users\UserNA1842\the-gym-git-exercises> git revert 8c4f694988e711407e1dd48904e94c6c5aa0ac81
+CONFLICT (rename/delete): team.html renamed to contact.html in HEAD, but deleted in parent of 8c4f694 (Add team page).
+CONFLICT (modify/delete): contact.html deleted in parent of 8c4f694 (Add team page) and modified in HEAD.  Version HEAD of contact.html left in tree.
+error: could not revert 8c4f694... Add team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/team-page
+error: you need to resolve your current index first
+contact.html: needs merge
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/team-page
+error: you need to resolve your current index first
+contact.html: needs merge
+PS C:\Users\UserNA1842\the-gym-git-exercises> git revert 8c4f694988e711407e1dd48904e94c6c5aa0ac81
+error: Reverting is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: revert failed
+PS C:\Users\UserNA1842\the-gym-git-exercises> git revert 8c4f694988e711407e1dd48904e94c6c5aa0ac81
+error: Reverting is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: revert failed
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/team-page
+error: you need to resolve your current index first
+contact.html: needs merge
+PS C:\Users\UserNA1842\the-gym-git-exercises> git revert 8c4f694988e711407e1dd48904e94c6c5aa0ac81
+CONFLICT (rename/delete): team.html renamed to contact.html in HEAD, but deleted in parent of 8c4f694 (Add team page).
+CONFLICT (modify/delete): contact.html deleted in parent of 8c4f694 (Add team page) and modified in HEAD.  Version HEAD of contact.html left in tree.
+error: could not revert 8c4f694... Add team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/team-page
+error: you need to resolve your current index first
+contact.html: needs merge
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/team-page
+Switched to branch 'ft/team-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git log
+commit 8c4f694988e711407e1dd48904e94c6c5aa0ac81 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Wed Aug 2 10:45:47 2023 +0200
+
+    Add team page
+
+commit a0ddbd72533d66b40477b41b9223555103531460 (origin/main, main)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:29:40 2023 +0200
+
+    Add README file
+
+commit 2b449a66bf0daf77d692c9d63bec2f444e61600b
+Merge: a5c933a fa89497
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:26:43 2023 +0200
+
+    Merge main with ft/service-redesign branch
+
+commit a5c933a92b8b7b76581faaf60c25da0005cb6ec1
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 11:53:50 2023 +0200
+
+    Add changes to the services page
+
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout faq.html
+error: pathspec 'faq.html' did not match any file(s) known to git
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git revert 8c4f694988e711407e1dd48904e94c6c5aa0ac81
+CONFLICT (modify/delete): team.html deleted in parent of 8c4f694 (Add team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert 8c4f694... Add team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/contact-page
+error: you need to resolve your current index first
+team.html: needs merge
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+warning: cancelling a revert in progress
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git revert 8c4f694988e711407e1dd48904e94c6c5aa0ac81
+CONFLICT (modify/delete): team.html deleted in parent of 8c4f694 (Add team page) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert 8c4f694... Add team page
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+warning: cancelling a revert in progress
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git log
+commit 5f207252af60210c73d389316dc73fb1a32d0695 (HEAD -> ft/faq-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Wed Aug 2 11:48:03 2023 +0200
+
+    Revert "Add team page"
+
+    This reverts commit 8c4f694988e711407e1dd48904e94c6c5aa0ac81.
+
+commit f0163c57dc0382f3f2d0c4bf21d9aeb530d6d29b (origin/ft/faq-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Wed Aug 2 11:22:42 2023 +0200
+
+    Add faq page
+
+commit 36d694ee3ecd942b0b8a2783b9e5c8d196b4189d (origin/ft/contact-page, ft/contact-page)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Wed Aug 2 11:18:37 2023 +0200
+
+    Add changes to the contact page
+
+commit a0ddbd72533d66b40477b41b9223555103531460 (origin/main, main)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:29:40 2023 +0200
+
+    Add README file
+PS C:\Users\UserNA1842\the-gym-git-exercises> git revert 5f207252af60210c73d389316dc73fb1a32d0695
+[ft/faq-page 0aade71] Revert "Revert "Add team page""
+ 1 file changed, 12 deletions(-)
+ delete mode 100644 team.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+commit a0ddbd72533d66b40477b41b9223555103531460 (origin/main, main)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Tue Aug 1 12:29:40 2023 +0200
+
+    Add README file
+PS C:\Users\UserNA1842\the-gym-git-exercises> git revert 5f207252af60210c73d389316dc73fb1a32d0695
+[ft/faq-page 0aade71] Revert "Revert "Add team page""
+ 1 file changed, 12 deletions(-)
+ delete mode 100644 team.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Revert the last changes"
+On branch ft/faq-page
+nothing to commit, working tree clean
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/faq-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 727 bytes | 727.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/NoellaPromise/git-exercises-solutions
+   f0163c5..0aade71  ft/faq-page -> ft/faq-page
+PS C:\Users\UserNA1842\the-gym-git-exercises>
+
+
+
+```
+# Bundle 3
+## Exercise 2
+```
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the home page"
+[main 11e0751] Add changes to the home page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 home.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin main
+To https://github.com/NoellaPromise/git-exercises-solutions
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/NoellaPromise/git-exercises-solutions'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.31 KiB | 58.00 KiB/s, done.
+From https://github.com/NoellaPromise/git-exercises-solutions
+ * branch            main       -> FETCH_HEAD
+   a0ddbd7..749c47f  main       -> origin/main
+Merge made by the 'ort' strategy.
+ contact.html | 12 ++++++++++++
+ team.html    | 12 ++++++++++++
+ 2 files changed, 24 insertions(+)
+ create mode 100644 contact.html
+ create mode 100644 team.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 754 bytes | 754.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/NoellaPromise/git-exercises-solutions
+   749c47f..bdd6121  main -> main
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+Auto-merging team.html
+CONFLICT (add/add): Merge conflict in team.html
+error: could not apply 5f20725... Revert "Add team page"
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 5f20725... Revert "Add team page"
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase --continue
+[detached HEAD 2bc489a] Revert "Add team page"
+ 1 file changed, 13 insertions(+)
+CONFLICT (modify/delete): team.html deleted in 0aade71 (Revert "Revert "Add team page"") and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not apply 0aade71... Revert "Revert "Add team page""
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 0aade71... Revert "Revert "Add team page""
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+Current branch ft/home-page-redesign is up to date.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+Current branch main is up to date.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+Current branch ft/home-page-redesign is up to date.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the home page"
+[ft/home-page-redesign de5e3b1] Add changes to the home page
+ 1 file changed, 1 insertion(+)
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/home-page-redesign
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 4.19 KiB | 2.09 MiB/s, done.
+Total 12 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/NoellaPromise/git-exercises-solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/NoellaPromise/git-exercises-solutions
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+PS C:\Users\UserNA1842\the-gym-git-exercises>
+
+
+```
