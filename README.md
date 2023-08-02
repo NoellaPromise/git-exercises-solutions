@@ -697,3 +697,114 @@ PS C:\Users\UserNA1842\the-gym-git-exercises>
 
 
 ```
+# Bundle 3
+## Exercise 2
+```
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the home page"
+[main 11e0751] Add changes to the home page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 home.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin main
+To https://github.com/NoellaPromise/git-exercises-solutions
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/NoellaPromise/git-exercises-solutions'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.31 KiB | 58.00 KiB/s, done.
+From https://github.com/NoellaPromise/git-exercises-solutions
+ * branch            main       -> FETCH_HEAD
+   a0ddbd7..749c47f  main       -> origin/main
+Merge made by the 'ort' strategy.
+ contact.html | 12 ++++++++++++
+ team.html    | 12 ++++++++++++
+ 2 files changed, 24 insertions(+)
+ create mode 100644 contact.html
+ create mode 100644 team.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 754 bytes | 754.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/NoellaPromise/git-exercises-solutions
+   749c47f..bdd6121  main -> main
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+Auto-merging team.html
+CONFLICT (add/add): Merge conflict in team.html
+error: could not apply 5f20725... Revert "Add team page"
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 5f20725... Revert "Add team page"
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase --continue
+[detached HEAD 2bc489a] Revert "Add team page"
+ 1 file changed, 13 insertions(+)
+CONFLICT (modify/delete): team.html deleted in 0aade71 (Revert "Revert "Add team page"") and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not apply 0aade71... Revert "Revert "Add team page""
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 0aade71... Revert "Revert "Add team page""
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+Current branch ft/home-page-redesign is up to date.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+Current branch main is up to date.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git rebase main
+Current branch ft/home-page-redesign is up to date.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the home page"
+[ft/home-page-redesign de5e3b1] Add changes to the home page
+ 1 file changed, 1 insertion(+)
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/home-page-redesign
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 4.19 KiB | 2.09 MiB/s, done.
+Total 12 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/NoellaPromise/git-exercises-solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/NoellaPromise/git-exercises-solutions
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+PS C:\Users\UserNA1842\the-gym-git-exercises>
+
+
+```
