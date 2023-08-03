@@ -340,3 +340,57 @@ PS C:\Users\UserNA1842\the-gym-git-exercises>
 
 
 ```
+# Bundle 4
+## Exercise 1
+```
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git remote add origin https://github.com/NoellaPromise/git-copy1
+error: remote origin already exists.
+PS C:\Users\UserNA1842\the-gym-git-exercises> git remote add https://github.com/NoellaPromise/git-copy1
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises>  git remote
+origin
+PS C:\Users\UserNA1842\the-gym-git-exercises> git remote add git-copy https://github.com/NoellaPromise/git-exercises-clone.git
+PS C:\Users\UserNA1842\the-gym-git-exercises> git remote
+git-copy
+origin
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .\home.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the home page"
+[main d183e80] Add changes to the home page
+ 1 file changed, 2 insertions(+)
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 406 bytes | 406.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/NoellaPromise/git-exercises-solutions
+   bdd6121..d183e80  main -> main
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push git-copy
+Enumerating objects: 41, done.
+Counting objects: 100% (41/41), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (41/41), 8.94 KiB | 1.49 MiB/s, done.
+Total 41 (delta 15), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (15/15), done.
+To https://github.com/NoellaPromise/git-exercises-clone.git
+ * [new branch]      main -> main
+PS C:\Users\UserNA1842\the-gym-git-exercises>
+
+```
