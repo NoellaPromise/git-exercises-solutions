@@ -394,3 +394,111 @@ To https://github.com/NoellaPromise/git-exercises-clone.git
 PS C:\Users\UserNA1842\the-gym-git-exercises>
 
 ```
+# Bundle 4
+## Exercise 2
+```
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add Footer"
+[ft/footer e5d05ab] Add Footer
+ 1 file changed, 11 insertions(+)
+ create mode 100644 ft/footer.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/footer
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 503 bytes | 503.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/NoellaPromise/git-exercises-solutions/pull/new/ft/footer
+remote:
+To https://github.com/NoellaPromise/git-exercises-solutions
+ * [new branch]      ft/footer -> ft/footer
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "Add changes to the footer"
+[ft/footer 2e0fc26] Add changes to the footer
+ 1 file changed, 1 insertion(+)
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 398 bytes | 398.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/NoellaPromise/git-exercises-solutions
+   e5d05ab..2e0fc26  ft/footer -> ft/footer
+PS C:\Users\UserNA1842\the-gym-git-exercises> git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 621 bytes | 31.00 KiB/s, done.
+From https://github.com/NoellaPromise/git-exercises-solutions
+ * branch            main       -> FETCH_HEAD
+   9933859..5be4a6d  main       -> origin/main
+Updating 2e0fc26..5be4a6d
+Fast-forward
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+PS C:\Users\UserNA1842\the-gym-git-exercises> git merge --squash ft/footer
+Updating 9933859..5be4a6d
+Fast-forward
+Squash commit -- not updating HEAD
+ ft/footer.html | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 ft/footer.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git log
+commit 99338595eda043310174937283bcba04f8bf3fbf (HEAD -> ft/squashing, git-copy/main, main)
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Thu Aug 3 11:27:04 2023 +0200
+
+    Add README file
+
+commit d183e804eed37642130455f708061993a10468e0
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Thu Aug 3 11:25:02 2023 +0200
+
+    Add changes to the home page
+
+commit bdd612100cb706ac3f3c3d9b4dc84961621b1310
+Merge: 11e0751 749c47f
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Wed Aug 2 20:30:06 2023 +0200
+
+    Merge branch 'main' of https://github.com/NoellaPromise/git-exercises-solutions
+
+commit 11e0751508e870572b7657daa15b2006049c7d97
+Author: Noella Claire DUSHAKIMANA <dushakenoella@gmail.com>
+Date:   Wed Aug 2 20:29:10 2023 +0200
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit - "footer changes squashing"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'footer changes squashing' did not match any file(s) known to git
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "footer changes squashing"
+[ft/squashing 36cdf68] footer changes squashing
+ 1 file changed, 12 insertions(+)
+ create mode 100644 ft/footer.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 531 bytes | 531.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/NoellaPromise/git-exercises-solutions/pull/new/ft/squashing
+remote:
+To https://github.com/NoellaPromise/git-exercises-solutions
+ * [new branch]      ft/squashing -> ft/squashing
+PS C:\Users\UserNA1842\the-gym-git-exercises>
+
+```
