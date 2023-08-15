@@ -394,3 +394,35 @@ To https://github.com/NoellaPromise/git-exercises-clone.git
 PS C:\Users\UserNA1842\the-gym-git-exercises>
 
 ```
+```
+# Bundle5
+## exercise1
+
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .\index.html
+PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises> git commit -m "rename home.html to index.html"
+[main e25c149] rename home.html to index.html
+ 3 files changed, 11 insertions(+)
+ create mode 100644 faq.html
+ rename ft/footer.html => footer.html (100%)
+ rename home.html => index.html (100%)
+PS C:\Users\UserNA1842\the-gym-git-exercises> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\UserNA1842\the-gym-git-exercises> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 722 bytes | 722.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/NoellaPromise/git-exercises-solutions
+   5be4a6d..e25c149  main -> main
+PS C:\Users\UserNA1842\the-gym-git-exercises>
+
+
+```
