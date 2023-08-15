@@ -342,7 +342,7 @@ PS C:\Users\UserNA1842\the-gym-git-exercises>
 ```
 # Bundle 4
 ## Exercise 1
-
+```
 PS C:\Users\UserNA1842\the-gym-git-exercises> git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
@@ -394,10 +394,10 @@ To https://github.com/NoellaPromise/git-exercises-clone.git
 PS C:\Users\UserNA1842\the-gym-git-exercises>
 
 ```
-
+# Bundle 5
+## Exercise 1
 ```
-# Bundle5
-## exercise1
+
 
 PS C:\Users\UserNA1842\the-gym-git-exercises> git add .\index.html
 PS C:\Users\UserNA1842\the-gym-git-exercises> git add .
@@ -424,7 +424,5 @@ remote: Resolving deltas: 100% (1/1), done.
 To https://github.com/NoellaPromise/git-exercises-solutions
    5be4a6d..e25c149  main -> main
 PS C:\Users\UserNA1842\the-gym-git-exercises>
-
-
 
 ```
