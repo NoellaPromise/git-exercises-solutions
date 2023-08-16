@@ -524,3 +524,18 @@ PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise>
 
 
 ```
+# bundle 6
+## exercise 3
+``PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git status
+On branch bug-fix
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index-4.html
+
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git commit -m "Change telephone number"
+[bug-fix 26fb469] Change telephone number
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise>`
+
+```
