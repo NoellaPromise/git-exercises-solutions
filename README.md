@@ -426,3 +426,32 @@ To https://github.com/NoellaPromise/git-exercises-solutions
 PS C:\Users\UserNA1842\the-gym-git-exercises>
 
 ```
+# Bundle 5
+## exercise 2
+```
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git add .\index.html
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git commit -m "Rename the main title"
+[main 6374e19] Rename the main title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 344 bytes | 344.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/NoellaPromise/git-cafe-exercise.git
+   d1d3f9c..6374e19  main -> main
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise>
+
+
+```
