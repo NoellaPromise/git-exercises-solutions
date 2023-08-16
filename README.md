@@ -524,9 +524,10 @@ PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise>
 
 
 ```
-# bundle 6
+# Bundle 6
 ## exercise 3
-``PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git add .
+```
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git add .
 PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git status
 On branch bug-fix
 Changes to be committed:
