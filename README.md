@@ -485,3 +485,42 @@ To https://github.com/NoellaPromise/git-cafe-exercise.git
    6374e19..1d769d6  main -> main
 
 ```
+## bundle 6
+### exercise 2
+```
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git checkout bug-fix
+error: pathspec 'bug-fix' did not match any file(s) known to git
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git checkout -b bug-fix
+Switched to a new branch 'bug-fix'
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git commit -m "change title to Contact"
+[bug-fix c18a6ef] change title to Contact
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git status
+On branch bug-fix
+nothing to commit, working tree clean
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git push origin bug-fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug-fix' on GitHub by visiting:
+remote:      https://github.com/NoellaPromise/git-cafe-exercise/pull/new/bug-fix
+remote:
+To https://github.com/NoellaPromise/git-cafe-exercise.git
+ * [new branch]      bug-fix -> bug-fix
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise>
+
+
+
+
+
+
+
+
+
+```
