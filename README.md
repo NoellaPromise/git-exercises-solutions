@@ -455,3 +455,33 @@ PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise>
 
 
 ```
+
+## Bundle 6
+
+### Exercise 1
+
+```
+   PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git branch -d menu
+error: Cannot delete branch 'menu' checked out at 'C:/Users/UserNA1842/the-gym-git-exercises/git-cafe-exercise'
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git branch -d menu
+Deleted branch menu (was 6374e19).
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git add .
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git commit -m "add menu"
+[main 1d769d6] add menu
+ 1 file changed, 11 insertions(+)
+ create mode 100644 menu.html
+PS C:\Users\UserNA1842\the-gym-git-exercises\git-cafe-exercise> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 455 bytes | 455.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/NoellaPromise/git-cafe-exercise.git
+   6374e19..1d769d6  main -> main
+
+```
